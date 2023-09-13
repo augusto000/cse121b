@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let n1 = '1' ;
 let n2 = 2 ;
 let r = 0 ;
@@ -9,6 +10,8 @@ let num2 = '10';
 let sum = num1 + num2 * 1;
 console.log("resultado ",sum)
 
+=======
+>>>>>>> 806c69f94fa95319776122c0d68ffc310445b65f
 // 🔍 Part 1 error
 //const userName = "Moroni";
 let userName = "Moroni";
@@ -31,7 +34,12 @@ console.log(`The total is ${theTotal}`);
 // 'total' function declaration
 function total(...theNumbers) {
 	let sum = 0;
+<<<<<<< HEAD
 	for (let aNumber of theNumbers) {
+=======
+	//alert("consult: why the for loop changed the type's value from array, to string (0 turned into '0', is this a common for loop behavior? ");
+	for (let aNumber in theNumbers) {
+>>>>>>> 806c69f94fa95319776122c0d68ffc310445b65f
 		sum += aNumber * 1; // Why do we use * 1? It implicitly converts a string to a number.
 	}
 	return sum
