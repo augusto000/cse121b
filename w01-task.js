@@ -20,7 +20,7 @@ console.log(`The total is ${theTotal}`);
 // 'total' function declaration
 function total(...theNumbers) {
 	let sum = 0;
-	alert("consult: why the for loop changed the type's value from array, to string (0 turned into '0', is this a common for loop behavior? ");
+	//alert("consult: why the for loop changed the type's value from array, to string (0 turned into '0', is this a common for loop behavior? ");
 	for (let aNumber in theNumbers) {
 		sum += aNumber * 1; // Why do we use * 1? It implicitly converts a string to a number.
 	}
