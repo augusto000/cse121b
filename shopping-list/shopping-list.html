@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 20px;
+        width: 200px;
+      }
+
+      li button {
+        padding: 2px;
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+      
+       const ul = document.querySelector('ul');
+       const input = document.querySelector('input');
+       input.focus();
+       const button0 = document.querySelector('button');
+       button0.addEventListener('click',()=>{
+        let inputedText = input.value;
+        input.value="";
+        let li = document.createElement('li');
+        let span = document.createElement('span');
+        const button1 = document.createElement('button');
+        
+        span.textContent=inputedText;
+        span.style.fontSize="35px";
+        span.style.color="Red";
+        li.appendChild(span);
+        button1.textContent="delete";
+        li.appendChild(button1);
+        
+        ul.appendChild(li);
+        input.focus();
+        button1.addEventListener('click',()=>{
+          console.log("debería borrarse");
+          ul.removeChild(li);
+          input.focus();
+        });
+       });
+    </script>
+  </body>
+</html>
