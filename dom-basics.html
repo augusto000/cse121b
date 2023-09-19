@@ -1,0 +1,41 @@
+<!-- dom-basics.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2</title>
+    <script src="/dom-basic/dom-basics.js" defer></script>
+  </head>
+  <body>
+    <h1>Week 2</h1>
+    <section>
+      <h2>Section 1</h2>
+      <p>This is a paragraph</p>
+      <p id="p2">This is a paragraph with an ID</p>
+    </section>
+    <section>
+      <h2>Section 2</h2>
+      <div>
+        <p>This is a paragraph in section 2</p>
+        <p class="green">This is a paragraph with an class</p>
+      </div>
+    </section>
+    <script>
+        //hallar un antecesor
+        let g = document.querySelector(".green");
+        let t_ = g.closest('div');
+        console.log(t_);
+        //obtener todos los parrafos
+        let todosP=document.querySelectorAll('p');
+        todosP.forEach((item)=>{
+          console.log(item);
+        });
+        for (item_ of todosP){
+          console.log("Item: ",item_);
+        }
+        
+        
+    </script>
+  </body>
+</html>
