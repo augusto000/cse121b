@@ -8,7 +8,7 @@ document.body.appendChild(newParagraph);
 //add a image to the body
 const img_=document.createElement('img');
 //img_.setAttribute("src","https://placeholder.com/200");
-img_.setAttribute('src','img/arbol.png');
+img_.setAttribute('src','arbol.png');
 img_.setAttribute('alt','imagen de un arbol');
 img_.setAttribute('title','Arbol parecido a la hoja de un Eucaliptus');
 document.body.appendChild(img_);
