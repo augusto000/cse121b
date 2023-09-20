@@ -35,7 +35,7 @@ let elements = array.length;
 console.log(typeof(index));
 array.map( (item, index)=>{ //mapping each element. Index the element
                            //check the last element and replace the , for the '.'  
-                           index < elements-1 ? foodElement.innerHTML +=`<em>${item}</em>, `: foodElement.innerHTML +=` ${item}.<br>`;   
+                           index < elements-1 ? foodElement.innerHTML +=`<strong>${item}</strong>, `: foodElement.innerHTML +=` <strong>${item}</strong>.<br>`;   
                           });
 array.push(anotherFavoriteFood);
 
