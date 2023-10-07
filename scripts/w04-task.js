@@ -20,7 +20,17 @@ let  myProfile = {
                'biking' 
     ],     
     
-    placesLived : [],       
+    placesLived : [
+
+                    {
+                        place  : 'Jujuy, ARG',
+                        length : '1 year'
+                    },
+                    {
+                        place  : 'Salta, ARG',
+                        length : '10 year'
+                    },
+                  ],       
 };
 
 myProfile.placesLived.push(
