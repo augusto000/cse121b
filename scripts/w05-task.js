@@ -36,14 +36,13 @@ let reset = ()=> {
 };
 
 /* sortBy Function */
-/* sortBy Function */
-/* sortBy Function */
 const sortBy = (temples) => {
     reset();
-    let filter_ = document.querySelector("#sortBy").value;
-    switch (filter_) {
+    let filter = document.querySelector("#sortBy").value;
+    switch (filter) {
       case "utah":
-        console.log(filter_);
+        console.log(filter);
+        displayTemples(temples.filter((temple)=>temple.location.includes("Utah")));
           break;
       case "notutah":    
         console.log(filter_);
