@@ -45,10 +45,11 @@ const sortBy = (temples) => {
         displayTemples(temples.filter((temple)=>temple.location.includes("Utah")));
           break;
       case "notutah":    
-        console.log(filter_);
+        console.log(filter);
+        displayTemples(temples.filter((temple)=>!temple.location.includes("Utah")));
           break;
       case "all":
-        console.log(filter_);  
+        console.log(filter);  
           break;                      
     }
 }
