@@ -25,7 +25,7 @@ const getTemples = async () =>{
     let url = 'https://byui-cse.github.io/cse121b-ww-course/resources/temples.json';
     const response = await fetch(url);
     if (response.ok){
-        const templeList = await response.json();
+        templeList = await response.json();
         //console.log(data);
        displayTemples(templeList);       
       };
