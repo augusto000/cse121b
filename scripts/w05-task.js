@@ -52,7 +52,7 @@ const sortBy = (temples) => {
           displayTemples(temples.filter((temple)=>temple.location.includes("Utah")));
           break;
       case "notutah":    
-        console.log(filter);
+      displayTemples(temples.filter((temple)=>!temple.location.includes("Utah")));
           break;
       case "older":  //Built Before 1950
         console.log(filter);  
@@ -65,5 +65,3 @@ const sortBy = (temples) => {
 getTemples();
     /* Event Listener */
 document.querySelector('#sortBy').addEventListener('change',() => sortBy(templeList));
-
-
