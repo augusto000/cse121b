@@ -15,8 +15,8 @@ function reset(){
 
 let getPokemon = async () => {
     let inputText = document.querySelector('#inputText').value;    
-    //console.log(inputText);
-    let url = `https://pokeapi.co/api/v2/pokemon/${inputText}`;
+    let lowerCaseText = inputText.toLowerCase();
+    let url = `https://pokeapi.co/api/v2/pokemon/${lowerCaseText}`;
     const response = await fetch(url);
     if (response.ok){
      pokemonList = await response.json();     
