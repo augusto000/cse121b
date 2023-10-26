@@ -23,7 +23,12 @@ let getPokemon = async () => {
      displayPokemon(pokemonList, inputText);    
     }
     else{
-     //alert('Pokemon not found..!');
+        //let lowerCaseText = inputText.toLowerCase();
+    let url = `https://pokeapi.co/api/v2/pokemon/ditto/${lowerCaseText}`;
+    const response = await fetch(url);
+    if (response.ok){
+     pokemonList = await response.json();     
+     displayPokemon(pokemonList, inputText);    
     }
  }
 
