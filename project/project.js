@@ -23,7 +23,7 @@ let getPokemon = async () => {
      displayPokemon(pokemonList, inputText);    
     }
     else{
-     alert('Pokemon not found..!');
+     //alert('Pokemon not found..!');
     }
  }
 
