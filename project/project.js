@@ -23,7 +23,7 @@ let getPokemon = async () => {
      displayPokemon(pokemonList, inputText);    
     }
     else{
-        //
+        console.log('No existe el Pokemon que ingresaste Mauricio');
     }
  }
 
