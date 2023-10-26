@@ -24,7 +24,7 @@ let getPokemon = async () => {
     pokemonList = await response.json();
     displayPokemon(pokemonList, inputText);
   } else {
-    alert("Pokemon not found..!");
+    alert("No existe ese Pokemon Maurició..!");
   }
 };
 
